@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Globalization;
-
-namespace Testing
+﻿namespace Testing
 {
   public static class Culture
   {

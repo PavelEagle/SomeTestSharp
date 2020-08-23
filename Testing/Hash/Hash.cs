@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading.Channels;
 
 namespace Testing
 {
@@ -7,6 +6,7 @@ namespace Testing
   {
     public static void TestingHash()
     {
+      //create hash table, add elements and can search it
       var hashTable = new HashTable<Car>(100);
       var testCar = new Car() {Color = "red", Name = "Honda", Price = 1000000};
       hashTable.Add(testCar);
@@ -16,7 +16,7 @@ namespace Testing
       hashTable.Add(new Car() {Color = "yellow", Name = "Ferrari", Price = 14000000});
       hashTable.Add(new Car() {Color = "red", Name = "Volvo", Price = 1400000});
 
-      Console.WriteLine(hashTable.Search(testCar));
+      Console.WriteLine(hashTable.Search(testCar)); 
       Console.WriteLine(hashTable.Search(new Car() { Color = "red", Name = "Lada", Price = 1000000 }));
     }
   }

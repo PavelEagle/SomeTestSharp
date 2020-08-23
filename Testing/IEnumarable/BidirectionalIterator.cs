@@ -22,6 +22,7 @@ namespace Testing
       }
       set
       {
+        var aa = enumType.GetField("dir");
         enumType.GetField("dir").SetValue(enumerator, value);
       }
     }

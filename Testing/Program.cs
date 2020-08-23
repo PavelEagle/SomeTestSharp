@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Testing
+﻿namespace Testing
 {
   class Program
   {
