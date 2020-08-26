@@ -1,4 +1,6 @@
-﻿namespace Testing
+﻿using System;
+
+namespace Testing
 {
   class Program
   {
@@ -6,7 +8,9 @@
     {
       //Hash.TestingHash();
       //Vector.TestVector();
-      IEnumarable.TestIEnumarable();
+      //IEnumarable.TestIEnumarable();
+
+      DelegateTest.Testing();
     }
   }
 }
