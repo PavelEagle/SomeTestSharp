@@ -10,7 +10,7 @@ namespace Testing
       //Vector.TestVector();
       //IEnumarable.TestIEnumarable();
 
-      DelegateTest.Testing();
+      DelegateTest.TestDelegateStrategy();
     }
   }
 }

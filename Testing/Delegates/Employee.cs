@@ -2,18 +2,18 @@
 {
   public class Employee
   {
-    private decimal _salery;
+    private decimal _salary;
 
-    public Employee(decimal salery)
+    public Employee(decimal salary)
     {
-      _salery = salery;
+      _salary = salary;
     }
 
-    public decimal Salery => _salery;
+    public decimal Salary => _salary;
 
     public void ApplyRaiseOf(decimal percent)
     {
-      _salery *= (1 + percent);
+      _salary *= (1 + percent);
     }
   }
 }

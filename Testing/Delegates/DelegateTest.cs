@@ -24,7 +24,7 @@ namespace Testing
 
       Delegate[] chain = cheined.GetInvocationList();
       double acc = 0;
-      for (int i = 0; i < chain.Length; i++)
+      for (var i = 0; i < chain.Length; i++)
       {
         ProcessResults current = (ProcessResults) chain[i];
         acc += current(4, 5);
@@ -52,8 +52,24 @@ namespace Testing
       foreach (var e in employees)
       {
         applyRaise(e, (decimal) 0.1);
-        Console.WriteLine(e.Salery);
+        Console.WriteLine(e.Salary);
       }
+    }
+
+    public static void EventTest()
+    {
+      Metronome m = new Metronome();
+      Listener l = new Listener();
+      l.Subscribe(m);
+      m.Start();
+    }
+
+    public static void TestDelegateStrategy()
+    {
+      var strategyTest = new DelegateStrategy(SortAlgorithms.SortFast);
+      strategyTest.DoSomeWork();
+      strategyTest.Strategy = SortAlgorithms.SortSlow;
+      strategyTest.DoSomeWork();
     }
   }
 }
