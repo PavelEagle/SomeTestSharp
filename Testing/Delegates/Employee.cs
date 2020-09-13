@@ -1,4 +1,4 @@
-﻿namespace Testing
+﻿namespace Testing.Delegates
 {
   public class Employee
   {

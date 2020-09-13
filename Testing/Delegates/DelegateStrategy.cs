@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace Testing
+namespace Testing.Delegates
 {
   public delegate void SortStrategy(ICollection collection);
   public class DelegateStrategy

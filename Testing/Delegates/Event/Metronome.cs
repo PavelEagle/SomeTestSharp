@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Testing
+namespace Testing.Delegates.Event
 {
   public class Metronome
   {

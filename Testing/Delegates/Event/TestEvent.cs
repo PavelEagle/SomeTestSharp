@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace Testing
+namespace Testing.Delegates.Event
 {
   // feature
   public class TestEvent

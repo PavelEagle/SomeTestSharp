@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Testing
+namespace Testing.HashTest
 {
   public class Item<T>
   {

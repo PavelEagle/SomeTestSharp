@@ -1,4 +1,4 @@
-﻿namespace Testing
+﻿namespace Testing.EnumerableTest
 {
   public enum  TIterationDirection
   {

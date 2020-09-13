@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Testing
+namespace Testing.Delegates.Event
 {
   // feature
   public class TestClassForEvent

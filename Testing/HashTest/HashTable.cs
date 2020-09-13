@@ -1,4 +1,4 @@
-﻿namespace Testing
+﻿namespace Testing.HashTest
 {
   public class HashTable<T>
   {

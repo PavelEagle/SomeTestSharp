@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
+using Testing.Delegates;
+using Testing.Delegates.Event;
 
 namespace Testing
 {
@@ -35,7 +37,7 @@ namespace Testing
       Console.WriteLine($"Combined: {combined}");
     }
 
-    public static void Testing()
+    public static void TestingDelegateSalaryRaiseOf()
     {
       Console.WriteLine("Open type: ");
       List<Employee> employees = new List<Employee>

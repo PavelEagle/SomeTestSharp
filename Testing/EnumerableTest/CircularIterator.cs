@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Testing
+namespace Testing.EnumerableTest
 {
   public class CircularIterator<T>: IEnumerable<T>
   {

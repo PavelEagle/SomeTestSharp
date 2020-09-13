@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace Testing
+namespace Testing.EnumerableTest
 {
   public class MyCollection<T>: IEnumerable<T>
   {
@@ -15,7 +15,7 @@ namespace Testing
     {
       lock (items.SyncRoot)
       {
-        foreach (T item in items)
+        foreach (var item in items)
         {
           yield return item;
         }

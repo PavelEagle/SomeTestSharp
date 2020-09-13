@@ -1,9 +1,10 @@
 ﻿using System;
+using Testing.HashTest;
 
 namespace Testing
 {
-  public static class Hash
-  {
+  public static class Hash{
+  
     public static void TestingHash()
     {
       //create hash table, add elements and can search it

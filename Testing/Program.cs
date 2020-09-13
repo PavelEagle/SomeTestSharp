@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Testing
+﻿namespace Testing
 {
   class Program
   {
@@ -11,6 +9,9 @@ namespace Testing
       //IEnumarable.TestIEnumarable();
 
       DelegateTest.TestDelegateStrategy();
+
+      GenericTest.ContravarianceTest();
+      GenericTest.MyDictionaryGeneticTest();
     }
   }
 }
