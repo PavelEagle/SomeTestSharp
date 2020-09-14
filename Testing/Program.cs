@@ -8,10 +8,10 @@
       //Vector.TestVector();
       //IEnumarable.TestIEnumarable();
 
-      DelegateTest.TestDelegateStrategy();
+      //DelegateTest.TestDelegateStrategy();
+      //GenericTest.MyDictionaryGeneticTest();
+      MultithreadingTest.SemaphoreTest();
 
-      GenericTest.ContravarianceTest();
-      GenericTest.MyDictionaryGeneticTest();
     }
   }
 }

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using Testing.Generics;
 
 namespace Testing
@@ -69,6 +71,21 @@ namespace Testing
       //Contravariance
       IMyTrimmableCollection<B> trimColl = collItems;
       trimColl.RemoveItem(b);
+    }
+
+    public static void GenericComplexTest()
+    {
+      var complex = new GenericComplex<long>(3, 4, MultiplyLong, AddLong, LongToDouble, DoubleToLong);
+
+      Console.WriteLine(complex.Magnitude);
+
+      static long MultiplyLong(long val1, long val2) => val1 * val2;
+
+      static long AddLong(long val1, long val2) => val1 + val2;
+
+      static long DoubleToLong(double d) => Convert.ToInt64(d);
+
+      static double LongToDouble(long d) => Convert.ToDouble(d);
     }
   }
 }
