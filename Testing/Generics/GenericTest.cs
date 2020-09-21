@@ -7,11 +7,12 @@ namespace Testing
 {
   public static class GenericTest
   {
-    public static void GenericDelegateContainerTest()
+    public static void GenericDelegateContainerTest1()
     {
       var delegates = new DelegateContainer<int>();
       delegates.Add(PrintInt);
       delegates.CallDelegates(55);
+      delegates.CallDelegates(44);
       delegates.CallDelegates(33);
       delegates.CallDelegates(44);
 
